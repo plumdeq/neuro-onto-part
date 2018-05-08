@@ -31,10 +31,10 @@ python3 logmap_to_starspace.py LOGMAP_INDEX
 
 ## Computing clusters
 
-`compute_clusters.py` takes in the converted lexical index and computes
-embeddings with starspace: `word1 x1 x2 ... xn`. Then, it computes aggregated
-vectors, and finally outputs clusters per set of words. This script will
-populate: 
+`compute_clusters.py` takes in the converted lexical index files found in
+`LOGMAP_DIR`, **and per each lexical index file it** computes embeddings with
+starspace: `word1 x1 x2 ... xn`. Then, it computes aggregated vectors, and
+finally outputs clusters per set of words. This script will populate: 
 
 * `CONVERTED_DIR` with starspace model and embeddings 
 * `RESULTS_DIR` with the clusters 
