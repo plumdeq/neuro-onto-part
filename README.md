@@ -11,7 +11,7 @@ Install requirements from `requirements.txt` with
 
 ```
 pip install -U pip
-pip -e install requirements.txt
+pip -r install requirements.txt
 ```
 
 ## Convert LogMap index into StarSpace-compliant format
