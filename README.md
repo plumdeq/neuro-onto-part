@@ -5,6 +5,15 @@ the lexical index, which is computed with LogMap. The clusters themselves are
 computed from the neural embeddings computed with StarSpace. Therefore it is
 required that you have starspace installed somewhere on your system.
 
+## Python packages requirements
+
+Install requirements from `requirements.txt` with
+
+```
+pip install -U pip
+pip -e install requirements.txt
+```
+
 ## Convert LogMap index into StarSpace-compliant format
 
 First, you need to convert LogMap stem -> concept_index mappings of the form
