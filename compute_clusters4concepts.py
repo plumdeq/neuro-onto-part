@@ -37,7 +37,8 @@ def get_embeddings(emb_file):
 @click.command()
 @click.argument("emb-file", type=click.Path(exists=True))
 @click.option("--output", default="sample_output.txt")
-def main(emb_file, output):
+@click.option("--n-clusters", default=2)
+def main(emb_file, output, n_clusters):
     logger.info("reading embeddings file {}".format(emb_file))
     my_embeddings = get_embeddings(emb_file)
     N, d = len(my_embeddings), len(list(my_embeddings.values())[0])
@@ -50,7 +51,7 @@ def main(emb_file, output):
     logger.info(X.shape)
 
     logger.info("training KMeans")
-    kmeans = KMeans(n_clusters=2, random_state=0).fit(X)
+    kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
 
     logger.info("output file to {}".format(output))
     with open(output, "w") as f:
