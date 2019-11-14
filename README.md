@@ -1,4 +1,4 @@
-# Partitioning ontology alignment task with neural embeddings
+# Dividing the ontology alignment task with neural embeddings
 
 This repo contains two scripts that prepare clusters of ontology classes from
 the lexical index, which is computed with LogMap. The clusters themselves are
