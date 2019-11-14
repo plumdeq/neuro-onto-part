@@ -1,7 +1,7 @@
 # Dividing the ontology alignment task with neural embeddings
 
 This repo contains two scripts that prepare clusters of ontology classes from
-the lexical index, which is computed with LogMap. The clusters themselves are
+the lexical index, which is computed with [LogMap](https://github.com/ernestojimenezruiz/logmap-matcher). The clusters themselves are
 computed from the neural embeddings computed with StarSpace. Therefore it is
 required that you have starspace installed somewhere on your system.
 
